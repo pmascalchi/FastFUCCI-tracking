@@ -15,13 +15,13 @@ Content:
     - Example of Autoclick Robot list of actions, saved as a .csv file. Note that a loop is managed by detecting a dummy image so you'll have to select any visible region in your screen wallpaper. Second note: any csv/table editor is useful to check the steps and/or modify them.
 
 --
-Guidelines for Trackmate:
+**Guidelines for Trackmate**:
 
 Automation is done for one channel at a time (so twice for green and red), due to different intensity thresholds. 
 Evaluation of tracking is priorily performed on one video. To be able to automate the process, you need to remember which parameter is modified from its default value. Besides, some modifications have to be done once to the list of automation actions to fit your configuration.
 
 
-Pre-requisite:
+**Pre-requisite**:
 
 Check that all provided files for the automation are saved on your local drive.
 Few quick modifications of paths are required in all Fiji macros: "Fucci-tracking-INIT_1.0.ijm", "Fucci-tracking_1.0.ijm", "Fucci-tracking-SAVE_2.0.ijm", "Fucci-tracking-END_1.0.ijm".
