@@ -13,23 +13,17 @@ Content:
     - Microsoft Windows batch files to open Fiji and subsequently run each macro listed below, in batch mode.
     - ImageJ/Fiji macros used to open each timelapse video, handle Trackmate exported data and format it to extract essential data.
     - Example of Autoclick Robot list of actions, saved as a .csv file. Note that a loop is managed by detecting a dummy image so you'll have to select any visible region in your screen wallpaper. Second note: any csv/table editor is useful to check the steps and/or modify them.
-    
+
+--
 Guidelines for Trackmate:
 Automation is done for one channel at a time (so twice for green and red), due to different intensity thresholds. 
 Evaluation of tracking is priorily performed on one video. To be able to automate the process, you need to remember which parameter is modified from its default value. Besides, some modifications have to be done once to the list of automation actions to fit your configuration.
 
+--
 Pre-requisite:
 Check that all provided files for the automation are saved on your local drive.
-Few quick modifications of paths are required in Fiji macros:
-    - Fucci-tracking-INIT_1.0.ijm
-    - Fucci-tracking_1.0.ijm
-    - Fucci-tracking-SAVE_2.0.ijm
-    - Fucci-tracking-END_1.0.ijm
-...and in .bat files:
-    - Automation-INIT.bat
-    - Automation-Fucci.bat
-    - Automation-SAVE.bat
-    - Automation-END.bat
+Few quick modifications of paths are required in all Fiji macros: "Fucci-tracking-INIT_1.0.ijm", "Fucci-tracking_1.0.ijm", "Fucci-tracking-SAVE_2.0.ijm", "Fucci-tracking-END_1.0.ijm".
+...and in .bat files: "Automation-INIT.bat", "Automation-Fucci.bat", "Automation-SAVE.bat", "Automation-END.bat".
 
 1. Once processed, open a single-channel timelapse video in Fiji and run the plugin Trackmate (menu Plugins/Tracking/).
 2. Check and correct dimensions if required and press next.
@@ -53,7 +47,7 @@ Few quick modifications of paths are required in Fiji macros:
 14. Close Fiji
 15. In AutoclickRobot window, start automation with Execute>Run commands (or CTRL+R). IMPORTANT: any move of the mouse will STOP the automation, and you can use this strategy to do some tests with automated actions...
 
-
+--
 Sources:
 - AutoclickRobot = http://autoclick-robot.en.softonic.com
 - Trackmate in Fiji = http://fiji.sc/Fiji, Schindelin, J.; Arganda-Carreras, I. & Frise, E. et al. (2012), "Fiji: an open-source platform for biological-image analysis", Nature methods 9(7): 676-682. 
