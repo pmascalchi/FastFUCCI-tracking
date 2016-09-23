@@ -15,7 +15,21 @@ Content:
     - Example of Autoclick Robot list of actions, saved as a .csv file. Note that a loop is managed by detecting a dummy image so you'll have to select any visible region in your screen wallpaper. Second note: any csv/table editor is useful to check the steps and/or modify them.
     
 Guidelines for Trackmate:
+Automation is done for one channel at a time (so twice for green and red), due to different intensity thresholds. 
 Evaluation of tracking is priorily performed on one video. To be able to automate the process, you need to remember which parameter is modified from its default value. Besides, some modifications have to be done once to the list of automation actions to fit your configuration.
+
+Pre-requisite:
+Check that all provided files for the automation are saved on your local drive.
+Few quick modifications of paths are required in Fiji macros:
+    - Fucci-tracking-INIT_1.0.ijm
+    - Fucci-tracking_1.0.ijm
+    - Fucci-tracking-SAVE_2.0.ijm
+    - Fucci-tracking-END_1.0.ijm
+...and in .bat files:
+    - Automation-INIT.bat
+    - Automation-Fucci.bat
+    - Automation-SAVE.bat
+    - Automation-END.bat
 
 1. Once processed, open a single-channel timelapse video in Fiji and run the plugin Trackmate (menu Plugins/Tracking/).
 2. Check and correct dimensions if required and press next.
@@ -26,16 +40,19 @@ Evaluation of tracking is priorily performed on one video. To be able to automat
 7. Play with time slider of the image and display options to check your tracking results. No need to save any data, just remember parameters that you have changed from default values. Note: do not close anything, yet!
 8. Now, double-click on the "AutoclickRobot-with-comment" .jar file. Empty table should appear.
 9. Open example .csv file. Column 1 = action type / column 2 to 4 = parameters (when an image is required, click on cell to get a screenshot and draw your region of interest - validation button is below) / column 5 = comments.
-10. Check that all provided files for the automation are saved on your local drive.
-11. Then modify Autoclick table by clicking in column 2 at the following lines:
+10. Then modify Autoclick table by clicking in column 2 at the following lines:
     - line 1 to select file "Automation-INIT.bat"
     - line 4 to select file "Automation-Fucci.bat"
     - line 45 to select file "Automation-SAVE.bat"
     - line 54 to select file "Automation-END.bat"
-12. Modify captured images (still by clicking in column 2) at the following lines:
+11. Modify captured images (still by clicking in column 2) at the following lines:
     - line 3 to capture a dummy region (wallpaper)
     - line 55 to capture a region that is hidden by the video when Fiji is running
-13. 
+12. Then look at comments to adjust steps with your tracking parameters, notably lines 9, 12, 27 (mean intensity filter threshold selection), 30, 33 and 39 (track length filter threshold selection).
+13. Save the list of actions as .csv
+14. Close Fiji
+15. In AutoclickRobot window, start automation with Execute>Run commands (or CTRL+R). IMPORTANT: any move of the mouse will STOP the automation, and you can use this strategy to do some tests with automated actions...
+
 
 Sources:
 - AutoclickRobot = http://autoclick-robot.en.softonic.com
