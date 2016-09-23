@@ -49,6 +49,9 @@ Few quick modifications of paths are required in all Fiji macros: "Fucci-trackin
 14. Close Fiji.
 15. In AutoclickRobot window, start automation with Execute>Run commands (or CTRL+R). IMPORTANT: any move of the mouse will STOP the automation, and you can use this strategy to do some tests with automated actions...
 
+Output:
+- "tracks-stats-xx-"
+
 --
 Sources:
 - AutoclickRobot = http://autoclick-robot.en.softonic.com
