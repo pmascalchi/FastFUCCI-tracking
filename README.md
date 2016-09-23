@@ -16,11 +16,13 @@ Content:
 
 --
 Guidelines for Trackmate:
+
 Automation is done for one channel at a time (so twice for green and red), due to different intensity thresholds. 
 Evaluation of tracking is priorily performed on one video. To be able to automate the process, you need to remember which parameter is modified from its default value. Besides, some modifications have to be done once to the list of automation actions to fit your configuration.
 
---
+
 Pre-requisite:
+
 Check that all provided files for the automation are saved on your local drive.
 Few quick modifications of paths are required in all Fiji macros: "Fucci-tracking-INIT_1.0.ijm", "Fucci-tracking_1.0.ijm", "Fucci-tracking-SAVE_2.0.ijm", "Fucci-tracking-END_1.0.ijm".
 ...and in .bat files: "Automation-INIT.bat", "Automation-Fucci.bat", "Automation-SAVE.bat", "Automation-END.bat".
@@ -43,8 +45,8 @@ Few quick modifications of paths are required in all Fiji macros: "Fucci-trackin
     - line 3 to capture a dummy region (wallpaper)
     - line 55 to capture a region that is hidden by the video when Fiji is running
 12. Then look at comments to adjust steps with your tracking parameters, notably lines 9, 12, 27 (mean intensity filter threshold selection), 30, 33 and 39 (track length filter threshold selection).
-13. Save the list of actions as .csv
-14. Close Fiji
+13. Save the list of actions as .csv.
+14. Close Fiji.
 15. In AutoclickRobot window, start automation with Execute>Run commands (or CTRL+R). IMPORTANT: any move of the mouse will STOP the automation, and you can use this strategy to do some tests with automated actions...
 
 --
