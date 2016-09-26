@@ -1,6 +1,6 @@
 
 -------------------------------------------------------------------------------
-### **FastFUCCI-tracking**
+### **FastFUCCI-tracking (draft version)**
 Set of macros to track individual FastFUCCI cells with Trackmate plugin for ImageJ/Fiji.
 Scripts are in the order of use. Further details included in macros and in original publication XX.
 
