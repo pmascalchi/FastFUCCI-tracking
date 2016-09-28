@@ -18,7 +18,7 @@ Content:
 **Guidelines for Trackmate**:
 
 Automation is done for one channel at a time (so twice for green and red), due to different intensity thresholds. 
-Evaluation of tracking is priorily performed on one video. To be able to automate the process, you need to remember which parameter is modified from its default value. Besides, some modifications have to be done once to the list of automation actions to fit your configuration, essentially x & y coordinates of clicks. Save all your actions as a .csv file to reuse it as much as you want.
+Evaluation of tracking is priorily performed on one video. To be able to automate the process, you need to remember which parameter is modified from its default value. Besides, some modifications have to be done once to the list of automation actions to fit your configuration, essentially x & y coordinates of clicks. Save all your actions as a .csv file to reuse it as much as you want. Note that line 21 in Fiji macro named "Fucci-tracking_1.0.ijm" is ensuring your video to always open at the same location with the same size. Modify the last two numbers to change image displayed size.
 
 
 **Pre-requisite**:
