@@ -6,7 +6,7 @@
 // Pre-requisite: you have to check that image processing (background subtraction, shading correction, 
 // optional bleach correction) is adapted to your timelapse videos. See code below for each channel...
 
-// Parameters to be modified by user
+// Parameters to be modified by user // use double backslash or appropriate characters as separator (depending on OS)
 mainpath = "E:\\Siang\\Exp59\\";		// directly containing images
 format = ".czi";
 // --------------------------------------------------------------------------------------------------------------
