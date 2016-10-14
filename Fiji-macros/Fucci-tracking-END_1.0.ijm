@@ -1,10 +1,10 @@
 // -------------------------------------------------------------------
 // Written by: Patrice Mascalchi
-// Date: 2014
+// Date: 2014-2016
 // Location: Cancer Research Institute, University of Cambridge, UK
 // -------------------------------------------------------------------
 
-// Parameters to be modified by user
+// Parameters to be modified by user // use double backslash or appropriate characters as separator (depending on OS)
 autopath = "C:\\Users\\Public\\Documents\\Siang\\Automation-Fucci\\";
 // --------------------------------------------------------------------------------------------------------------
 
