@@ -2,7 +2,7 @@
 -------------------------------------------------------------------------------
 ### **FastFUCCI-tracking**
 Set of macros to track individual FastFUCCI cells with Trackmate plugin for ImageJ/Fiji.
-Scripts are in the order of use. Further details included in macros and in original publication XX.
+Scripts are in the order of use. Further details included in macros and in original publication http://jcs.biologists.org/content/early/2016/11/25/jcs.195164.
 
 1. ImageJ/Fiji macro for **image processing**. Initial data should be multichannel timelapse for individual stage positions. First channel has to be green, second one red. Other channels are not taken in account.
 
