@@ -1,0 +1,56 @@
+Open Website/App,C:\Users\Public\Documents\Siang\Automation-Fucci\Automation-INIT.bat,1,2000,
+Sleep milliseconds,4000,,,
+Loop If ImageCount is,Fucci_1.01.bmp,1,1000,
+Open Website/App,C:\Users\Public\Documents\Siang\Automation-Fucci\Automation-Fucci.bat,1,3000,
+Wait till Image Appears,Fucci_1.02.bmp,600,,
+Sleep milliseconds,1500,,,
+Left Click at,1421:704,1,1000,Step1: clic Next
+Left Click at,1422:703,1,1000,Step2: clic Next
+Left Click at,1335:483,2,200,Step3: Blob diameter
+Clear Text,,,,
+Copy Text,17,1,500,
+Left Click at,1336:503,2,200,Step3: Threshold
+Clear Text,,,,
+Copy Text,140,1,500,
+If Image Count is,Fucci_1.03.bmp,1,500,if subpx localization selected
+Left Click at,1179:575,1,500,
+End If,,,,
+Left Click at,1421:703,1,3000,Step3: clic Next
+Wait till Image Appears,Fucci_1.04.bmp,600,,600 sec
+Sleep milliseconds,2000,,,
+Left Click at,1421:701,1,2000,clic next
+Left Click at,1421:701,1,8000,Step4: clic Next
+Left Click at,1422:702,1,2000,Step5: clic Next
+Left Click at,1174:631,1,1500,Step6: add Spot filter
+Left Click at,1423:284,1,1000,Step6: choose parameter
+Left Click at,1304:411,1,1000,Step6: param=mean intensity
+Left Click at,1184:353,1,1000,Step6: arbitrary threshold
+Left Click at,1421:705,1,1500,Step6: clic Next
+Left Click at,1417:703,1,1500,Step7 (LAP tracker): clic Next
+Left Click at,1364:509,2,200,Step8: Gap max dist
+Clear Text,,,,
+Copy Text,20,1,500,
+Left Click at,1364:556,2,1000,Step8: Gap max nb
+Clear Text,,,,
+Copy Text,3,1,500,
+Left Click at,1419:704,1,5000,Step8: clic next
+Left Click at,1419:702,1,2000,Step9: clic next
+Left Click at,1175:631,1,1500,Step10: add Track filter
+Left Click at,1202:349,1,1500,Step10: arbitrary threshold
+Left Click at,1419:704,1,3000,Step10: clic Next
+Left Click at,1178:279,1,1000,Step11: Hide Spots
+Left Click at,1426:479,1,1000,Step11: Choose Track display
+Left Click at,1379:534,1,1000,Step11: Local Track backward
+Left Click at,1364:657,1,3000,Step11: ANALYSIS
+Open Website/App,C:\Users\Public\Documents\Siang\Automation-Fucci\Automation-SAVE.bat,1,3000,save stats
+Wait till Image Appears,Fucci_1.05.bmp,300,,
+Sleep milliseconds,2000,,,
+Left Click at,1419:704,1,2000,Step11: clic Next
+Left Click at,1419:704,1,2000,Step12: clic Next
+Left Click at,1295:291,1,1000,Step13: Choose action menu
+Left Click at,1294:406,1,1000,Step13: Capture overlay
+Left Click at,1244:475,1,5000,Step13: Execute
+Wait till Image Appears,Fucci_1.06.bmp,300,,
+Open Website/App,C:\Users\Public\Documents\Siang\Automation-Fucci\Automation-END.bat,1,5000,save capture and exit
+Wait till Image Appears,Fucci_1.07.bmp,300,,
+End For Loop,,,,
