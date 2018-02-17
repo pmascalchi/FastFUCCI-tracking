@@ -12,7 +12,7 @@ Content:
     - Image folder used by AutoclickRobot script. Mandatory: should be a direct subfolder of the .jar location.
     - Microsoft Windows batch files to open Fiji and subsequently run each macro listed below, in batch mode.
     - ImageJ/Fiji macros used to open each timelapse video, handle Trackmate exported data and format it to extract essential data.
-    - Example of Autoclick Robot list of actions, saved as a .csv file. Note that a loop is managed by detecting a dummy image so you'll have to select any visible region in your screen wallpaper. Second note: any csv/table editor is useful to check the steps and/or modify them.
+    - Example of Autoclick Robot list of actions, saved as a .csv file (Fucci_1.0.csv). Note that a loop is managed by detecting a dummy image so you'll have to select any visible region in your screen wallpaper. Second note: any csv/table editor is useful to check the steps and/or modify them.
 
 --
 **Guidelines for Trackmate**:
